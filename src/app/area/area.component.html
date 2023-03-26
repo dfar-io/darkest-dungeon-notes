@@ -1,0 +1,14 @@
+<h1>{{ area }}</h1>
+
+<h2>Heroes</h2>
+<ul>
+    <li *ngFor="let areaHero of areaHeroes;">
+      <a [routerLink]="['/hero', areaHero.hero]">
+        {{ areaHero.hero }}
+      </a>
+      <span *ngIf="areaHero.score !== undefined" [ngStyle]="{'color': areaHero.score > 0 ? 'green' : 'red' }">
+        ({{ areaHero.score }})
+      </span>
+      <span *ngIf="areaHero.note !== undefined">({{ areaHero.note }})</span>
+    </li>
+</ul>

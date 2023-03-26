@@ -1,0 +1,19 @@
+<h2>Areas</h2>
+<nav>
+  <ul>
+    <li *ngFor="let area of areas;">
+      <a [routerLink]="['/area', area]">{{ area }}</a>
+    </li>
+  </ul>
+</nav>
+
+<h2>Heroes</h2>
+<nav>
+  <ul>
+    <li *ngFor="let hero of heroes;">
+      <a [routerLink]="['/hero', hero]">{{ hero }}</a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

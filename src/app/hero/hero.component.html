@@ -1,0 +1,35 @@
+<h1>{{ hero }}</h1>
+
+<h2>Areas</h2>
+<ul>
+    <li *ngFor="let areaHero of areaHeroes;">
+      <a [routerLink]="['/area', areaHero.area]">
+        {{ areaHero.area }}
+      </a>
+      <span *ngIf="areaHero.note !== undefined">({{ areaHero.note }})</span>
+    </li>
+</ul>
+
+<h2>Heroes</h2>
+<ul>
+    <li *ngFor="let heroHero of heroHeroes;">
+      <span [ngSwitch]="true">
+        <ng-container *ngSwitchCase="hero === heroHero.hero1 && hero === heroHero.hero2">
+            <a [routerLink]="['/hero', heroHero.hero1]">
+                {{ heroHero.hero1 }}
+            </a>
+        </ng-container>
+        <ng-container *ngSwitchCase="hero !== heroHero.hero1">
+            <a [routerLink]="['/hero', heroHero.hero1]">
+                {{ heroHero.hero1 }}
+            </a>
+        </ng-container>
+        <ng-container *ngSwitchCase="hero !== heroHero.hero2">
+            <a [routerLink]="['/hero', heroHero.hero2]">
+                {{ heroHero.hero2 }}
+            </a>
+        </ng-container>
+      </span>
+      <span *ngIf="heroHero.note !== undefined">({{ heroHero.note }})</span>
+    </li>
+</ul>
