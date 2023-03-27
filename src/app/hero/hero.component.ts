@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AreaHero, areaHeroList } from '../data/area-hero';
 import { HeroHero, heroHeroList } from '../data/hero-hero';
+import { HeroTrinket, heroTrinketList } from '../data/hero-trinket';
 
 @Component({
   selector: 'app-hero',
@@ -12,6 +13,7 @@ export class HeroComponent {
   hero = "";
   areaHeroes: AreaHero[] = [];
   heroHeroes: HeroHero[] = [];
+  heroTrinkets: HeroTrinket[] = [];
 
   constructor(
     private route: ActivatedRoute,
@@ -27,6 +29,9 @@ export class HeroComponent {
       this.heroHeroes = heroHeroList.filter((heroHero) => {
         return heroHero.hero1.toString() === this.hero ||
                heroHero.hero2.toString() === this.hero;
+      });
+      this.heroTrinkets = heroTrinketList.filter((heroTrinket) => {
+        return heroTrinket.hero.toString() === this.hero;
       });
     });
   }

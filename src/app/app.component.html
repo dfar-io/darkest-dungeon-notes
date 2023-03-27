@@ -7,6 +7,15 @@
   </ul>
 </nav>
 
+<h2>Trinkets</h2>
+<nav>
+  <ul>
+    <li *ngFor="let trinket of trinkets;">
+      <a [routerLink]="['/trinket', trinket]">{{ trinket }}</a>
+    </li>
+  </ul>
+</nav>
+
 <h2>Heroes</h2>
 <nav>
   <ul>

@@ -10,6 +10,15 @@
     </li>
 </ul>
 
+<h2>Trinkets</h2>
+<ul>
+    <li *ngFor="let heroTrinket of heroTrinkets;">
+      <a [routerLink]="['/trinket', heroTrinket.trinket]">
+        {{ heroTrinket.trinket }}
+      </a>
+    </li>
+</ul>
+
 <h2>Heroes</h2>
 <ul>
     <li *ngFor="let heroHero of heroHeroes;">
