@@ -1,5 +1,5 @@
 export enum Trinket {
-    BrokenKey = "broken-key",
+
     StunAmuletDazzlingCharm = "stun-amulet-dazzling-charm",
     MastersEssence = "masters-essence",
     FeatherCrystal = "feather-crystal",
@@ -10,7 +10,7 @@ export enum Trinket {
     AncestorsScroll = "ancestors-scroll",
     HeartburstHood = "heartburst-hood",
     MartyrsSeal = "martyrs-seal",
-    FleshsHeart = "fleshs-heart",
+    FleshesHeart = "fleshes-heart",
     BleedAmulet = "bleed-amulet",
     RaidersTailsman = "raiders-tailsman",
     SharpenedLetterOpener = "sharpened-letter-opener",
@@ -31,5 +31,17 @@ export enum Trinket {
     BlasphemousVial = "blasphemous-vial",
     SpectralSpeartip = "spectral-speartip",
     SalaciousDiary = "salacious-diary",
-    AncestorsMap = "ancestors-map"
+    AncestorsMap = "ancestors-map",
+    ChildhoodTreasure = "childhood-treasure",
+    // Abomination
+    BrokenKey = "broken-key",
+    PadlockOfTransference = "padlock-of-transference",
+    // Antiquarian
+    TheMastersEssence = "TheMastersEssence",
+    BagOfMarbles = "bag-of-marbles",
+    FleetFloren = "fleet-floren",
+    CandleOfLife = "CandleOfLife",
+    // Vestal
+    JuniasHead = "junias-head",
+    
 }

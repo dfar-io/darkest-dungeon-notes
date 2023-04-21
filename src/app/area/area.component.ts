@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AreaHero, areaHeroList } from '../data/area-hero';
+import { Area } from './area';
+import { AreaService } from './area.service';
 
 @Component({
   selector: 'app-area',
@@ -8,20 +9,17 @@ import { AreaHero, areaHeroList } from '../data/area-hero';
   styleUrls: ['./area.component.css']
 })
 export class AreaComponent {
-  area = "";
-  areaHeroes: AreaHero[] = [];
+  area!: Area;
 
   constructor(
+    private areaService: AreaService,
     private route: ActivatedRoute,
   ) {}
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      const areaName = params['name'];
-      this.area = areaName as string;
-      this.areaHeroes = areaHeroList.filter((areaHero) => {
-        return areaHero.area.toString() === this.area;
-      });
+      const areaId = params['id'];
+      this.area = this.areaService.getAreaById(areaId);
     });
   }
 }

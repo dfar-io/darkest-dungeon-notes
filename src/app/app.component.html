@@ -1,28 +1,20 @@
+<h1>
+  Darkest Dungeon Notes
+</h1>
+
 <h2>Areas</h2>
-<nav>
-  <ul>
-    <li *ngFor="let area of areas;">
-      <a [routerLink]="['/area', area]">{{ area }}</a>
-    </li>
-  </ul>
-</nav>
-
-<h2>Trinkets</h2>
-<nav>
-  <ul>
-    <li *ngFor="let trinket of trinkets;">
-      <a [routerLink]="['/trinket', trinket]">{{ trinket }}</a>
-    </li>
-  </ul>
-</nav>
-
+<ul>
+  <li *ngFor="let area of areas;">
+    <a [routerLink]="['/area', area]">{{ area }}</a>
+  </li>
+</ul>
+    
 <h2>Heroes</h2>
-<nav>
-  <ul>
-    <li *ngFor="let hero of heroes;">
-      <a [routerLink]="['/hero', hero]">{{ hero }}</a>
-    </li>
-  </ul>
-</nav>
+<ul>
+  <li *ngFor="let hero of heroes;">
+    <a [routerLink]="['/hero', hero]">{{ hero }}</a>
+  </li>
+</ul>
 
 <router-outlet></router-outlet>
+

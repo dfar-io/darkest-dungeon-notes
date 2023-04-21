@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { AreaHero, areaHeroList } from '../data/area-hero';
-import { HeroHero, heroHeroList } from '../data/hero-hero';
-import { HeroTrinket, heroTrinketList } from '../data/hero-trinket';
+import { HeroService } from './hero.service';
+import { Hero } from './hero';
 
 @Component({
   selector: 'app-hero',
@@ -10,29 +9,17 @@ import { HeroTrinket, heroTrinketList } from '../data/hero-trinket';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent {
-  hero = "";
-  areaHeroes: AreaHero[] = [];
-  heroHeroes: HeroHero[] = [];
-  heroTrinkets: HeroTrinket[] = [];
+  hero!: Hero;
 
   constructor(
+    private heroService: HeroService,
     private route: ActivatedRoute,
   ) {}
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      const heroName = params['name'];
-      this.hero = heroName as string;
-      this.areaHeroes = areaHeroList.filter((areaHero) => {
-        return areaHero.hero.toString() === this.hero;
-      });
-      this.heroHeroes = heroHeroList.filter((heroHero) => {
-        return heroHero.hero1.toString() === this.hero ||
-               heroHero.hero2.toString() === this.hero;
-      });
-      this.heroTrinkets = heroTrinketList.filter((heroTrinket) => {
-        return heroTrinket.hero.toString() === this.hero;
-      });
+      const heroId = params['id'];
+      this.hero = this.heroService.getHeroById(heroId);
     });
   }
 }

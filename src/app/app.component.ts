@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { Area } from './area/area';
-import { Hero } from './hero/hero';
-import { Trinket } from './trinket/trinket';
+import { AreaId } from './area/area';
+import { HeroId } from './hero/hero';
 
 @Component({
   selector: 'app-root',
@@ -9,15 +8,11 @@ import { Trinket } from './trinket/trinket';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  areas = Object.values(Area).filter((item) => {
+  areas = Object.values(AreaId).filter((item) => {
     return isNaN(Number(item));
   });
 
-  heroes = Object.values(Hero).filter((item) => {
+  heroes = Object.values(HeroId).filter((item) => {
     return isNaN(Number(item));
-  }).sort();
-
-  trinkets = Object.values(Trinket).filter((trinket) => {
-    return isNaN(Number(trinket));
   }).sort();
 }

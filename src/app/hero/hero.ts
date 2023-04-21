@@ -1,4 +1,7 @@
-export enum Hero {
+import { AreaId } from "../area/area"
+import { Trinket } from "../trinket/trinket"
+
+export enum HeroId {
     Abomination = "abomination",
     Antiquarian = "antiquarian",
     Arbalest = "arbalest",
@@ -16,4 +19,11 @@ export enum Hero {
     PlagueDoctor = "plague-doctor",
     Shieldbreaker = "shieldbreaker",
     Vestal = "vestal"
+}
+
+export interface Hero {
+    id: HeroId,
+    position: number[],
+    moves: string[],
+    trinkets: Trinket[]
 }
