@@ -23,6 +23,11 @@ Access at `http://localhost:8080`
 
 This is deployed to a GCP Cloud Run instance that is not managed by Terraform.
 
+To set this up, create a service account within the Google Cloud instance, then
+shrink JSON into one line and store as Github Actions secret, using the following:
+
+`cat credentials.json | jq -r tostring`
+
 ## Angular README
 
 ### Code scaffolding
