@@ -13,5 +13,11 @@ export const bountyHunter: Hero = {
     trinkets: [
         Trinket.HuntersTalon,
         Trinket.StunAmuletDazzlingCharm
+    ],
+    campSkills: [
+      'This is How We Do it',
+      'Planned Takedown (bosses)',
+      'Encourage',
+      'Wound Care'
     ]
 }

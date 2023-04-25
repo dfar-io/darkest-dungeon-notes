@@ -14,5 +14,11 @@ export const manAtArms: Hero = {
         Trinket.OldUnitStandard,
         Trinket.FortifyingGarlic,
         Trinket.RampartShield
+    ],
+    campSkills: [
+      'Tactics',
+      'Weapons Practice/Instruction',
+      'Encourage',
+      'Wound Care'
     ]
 }

@@ -13,5 +13,11 @@ export const highwayman: Hero = {
     trinkets: [
         Trinket.ShamefulLocket,
         Trinket.AncestorsSignetRing
+    ],
+    campSkills: [
+      'Bandit\'s Sense',
+      'Gallow\'s Humor',
+      'Unparelled Finesse',
+      'Encourage/Wound Care'
     ]
 }

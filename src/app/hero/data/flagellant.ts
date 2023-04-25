@@ -12,6 +12,11 @@ export const flagellant: Hero = {
     ],
     trinkets: [
         Trinket.FleshesHeart,
-        Trinket.BleedAmulet
+        Trinket.BleedAmulet,
+        Trinket.FortifyingGarlic
+    ],
+    campSkills: [
+      'Lash\'s Solace',
+      'Lash\'s Cure'
     ]
 }

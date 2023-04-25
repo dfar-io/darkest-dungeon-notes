@@ -13,5 +13,10 @@ export const plagueDoctor: Hero = {
     trinkets: [
         Trinket.BlasphemousVial,
         Trinket.FeatherCrystal
+    ],
+    campSkills: [
+      'Leeches/The Cure',
+      'Encourage',
+      'Vapors/Wound Care'
     ]
 }

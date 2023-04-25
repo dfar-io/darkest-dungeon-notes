@@ -13,5 +13,11 @@ export const occultist: Hero = {
     trinkets: [
         Trinket.VialOfSand,
         Trinket.FeatherCrystal
+    ],
+    campSkills: [
+      'Dark Strength',
+      'Unspeakable Commune',
+      'Encourage',
+      'Wound Care'
     ]
 }

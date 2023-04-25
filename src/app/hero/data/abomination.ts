@@ -14,5 +14,11 @@ export const abomination: Hero = {
         Trinket.BrokenKey,
         Trinket.PadlockOfTransference,
         Trinket.StunAmuletDazzlingCharm,
+    ],
+    campSkills: [
+      'Anger Management',
+      'The Quickening',
+      'Encourage',
+      'Wound Care'
     ]
 }

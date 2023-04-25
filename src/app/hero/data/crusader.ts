@@ -13,5 +13,11 @@ export const crusader: Hero = {
     trinkets: [
         Trinket.AncestorsScroll,
         Trinket.ParalyzersCrest
+    ],
+    campSkills: [
+      'Stand Tall',
+      'Zealous Watch',
+      'Zealous Speech/Encourage',
+      'Wound Care'
     ]
 }

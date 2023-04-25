@@ -13,5 +13,9 @@ export const shieldbreaker: Hero = {
     trinkets: [
         Trinket.SpectralSpeartip,
         Trinket.FeatherCrystal
+    ],
+    campSkills: [
+      'Encourage',
+      'Wound Care'
     ]
 }

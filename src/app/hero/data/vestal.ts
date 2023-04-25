@@ -14,5 +14,11 @@ export const vestal: Hero = {
         Trinket.SalaciousDiary,
         Trinket.JuniasHead,
         Trinket.AncestorsMap
+    ],
+    campSkills: [
+      'Sanctuary',
+      'Bless',
+      'Encourage',
+      'Wound Care'
     ]
 }
