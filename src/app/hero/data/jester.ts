@@ -13,5 +13,11 @@ export const jester: Hero = {
     trinkets: [
         Trinket.CriticalDice,
         Trinket.BarristansHead
+    ],
+    campSkills: [
+      'Tiger\'s Eye',
+      'Every Rose Has It\'s Thorns/Mockery',
+      'Turn back Time/Encourage',
+      'Wound Care'
     ]
 }

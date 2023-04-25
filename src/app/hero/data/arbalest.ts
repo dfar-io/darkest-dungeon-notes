@@ -14,5 +14,11 @@ export const arbalest: Hero = {
         Trinket.ChildhoodTreasure,
         Trinket.MedicsGreaves,
         Trinket.DismasHead
+    ],
+    campSkills: [
+      'Marching Plan',
+      'Restring Crossbow',
+      'Encourage',
+      'Wound Care/Triage'
     ]
 }

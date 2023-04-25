@@ -13,5 +13,11 @@ export const hellion: Hero = {
     trinkets: [
         Trinket.HeavensHairpin,
         Trinket.SurgicalGloves
+    ],
+    campSkills: [
+      'Sharpen Spear/Battle Trance',
+      'Revel',
+      'Encourage',
+      'Wound Care'
     ]
 }

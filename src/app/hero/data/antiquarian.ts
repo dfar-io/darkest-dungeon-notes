@@ -15,5 +15,11 @@ export const antiquarian: Hero = {
         Trinket.CandleOfLife,
         Trinket.BagOfMarbles,
         Trinket.FleetFloren
+    ],
+    campSkills: [
+      'Trinket Scrounge',
+      'Strange Powders',
+      'Encourage',
+      'Wound Care'
     ]
 }

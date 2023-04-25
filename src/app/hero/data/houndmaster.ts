@@ -13,5 +13,11 @@ export const houndmaster: Hero = {
     trinkets: [
         Trinket.EvidenceOfCorruption,
         Trinket.AncestorsPistol
+    ],
+    campSkills: [
+      'Hound\'s Watch',
+      'Therapy Dog',
+      'Encourage',
+      'Wound Care'
     ]
 }

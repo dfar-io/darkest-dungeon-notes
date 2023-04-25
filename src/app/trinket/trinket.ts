@@ -43,5 +43,5 @@ export enum Trinket {
     CandleOfLife = "CandleOfLife",
     // Vestal
     JuniasHead = "junias-head",
-    
+
 }

@@ -13,5 +13,11 @@ export const graveRobber: Hero = {
     trinkets: [
         Trinket.RaidersTailsman,
         Trinket.SharpenedLetterOpener
+    ],
+    campSkills: [
+      'Night Moves',
+      'Snuff Box',
+      'Gallows Humor',
+      'Encourage'
     ]
 }

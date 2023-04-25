@@ -13,5 +13,11 @@ export const leper: Hero = {
     trinkets: [
         Trinket.FortunateArmlet,
         Trinket.FocusRing
+    ],
+    campSkills: [
+      'Reflection',
+      'Quarantine',
+      'Bloody Shroud',
+      'Wound Care'
     ]
 }

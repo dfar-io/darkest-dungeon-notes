@@ -25,5 +25,6 @@ export interface Hero {
     id: HeroId,
     position: number[],
     moves: string[],
-    trinkets: Trinket[]
+    trinkets: Trinket[],
+    campSkills: string[]
 }
